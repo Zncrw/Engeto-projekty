@@ -56,9 +56,9 @@ if username in registered_usernames:
             for length in range(1, max_length + 1):
                 if length in data_2:
                     star = '*' * data_2[length]
-                    print(f'{length}|{star.rjust(15)}|{data_2[length]}')
+                    print(f"{length}|{star.rjust(15)}|{data_2[length]}")
                 else:
-                    print(f'{length}|{' ' * 15}|0')
+                    print(f"{length}|{' ' * 15}|0")
 
 
         words_2 = TEXTS[select - 1].split()
@@ -70,7 +70,7 @@ if username in registered_usernames:
             else:
                 data_2[length] = 1
         print(LINE)
-        print("LEN|  OCCURRENCES  |NR")
+        print('LEN|  OCCURRENCES  |NR')
         print(LINE)
         create_ladder_graph(data_2)
 
