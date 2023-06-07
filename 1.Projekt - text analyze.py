@@ -70,7 +70,7 @@ if username in registered_usernames:
             else:
                 data_2[length] = 1
         print(LINE)
-        print('LEN|  OCCURRENCES  |NR')
+        print("{:3}|{:^18}|{:2}".format("LEN", "OCCURENCES", "NR."))
         print(LINE)
         create_ladder_graph(data_2)
 
